@@ -1,2 +1,2 @@
 # CC_MINI_PROJECT
-Cloud Computing MIni Project host on AWS
+Cloud Computing Mini Project host on AWS
