@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="/style.css">
+  <title>Profile</title>
+</head>
+<body>
+  <nav>
+    <h4>Password Manager</h4>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/Profile">Profile</a></li>
+      <li><a href="/auth/Logout">Logout</a></li>
+    </ul>
+  </nav>
+<div class="passwordsform">
+  <div class="container mt-4">
+    <div class="col-8">
+      <div class="card text-center">
+        <div class="card-header">
+          Profile Page
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Hey {{user.Name}} Do You Want To See Your Passwords</h5>
+          <br>
+            <div>
+             <a href="/ShowPasswords"><button type="submit" class="btn btn-outline-success">Click Here</button></a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="containerprofile">
+  <div class="container mt-4">
+
+      <div class="col-8">
+        <div class="card text-center">
+          <div class="card-header">
+            Profile Page
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Hey {{user.Name}} Welcome Back</h5>
+            <p class="card-text">This is your profile page where you can add your passwords for respective websites.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="col-8">
+          <div class="card text-center">
+            <div class="card-header">
+              Password Vault
+            </div>
+            <br>
+            {{#if message }}
+            <h4 class="alert alert-danger mt-4" style="margin: 0 9%;">{{message}}</h4>
+            {{/if}}
+
+              <div class="card-body">
+                  <form action="/auth/Vault" method="POST">
+                    <div class="row g-3">
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="Fields Like(Website)" aria-label="First name" name="fields">
+                        </div>
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="Password" aria-label="password" name="password">
+                        </div>
+                      </div>
+                      <br>
+                      <div>
+                        <button type="submit" class="btn btn-outline-success">Add to Vault</button>
+                      </div>
+                  </form>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+</body>
+</html>

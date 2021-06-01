@@ -1,0 +1,24 @@
+{
+  "name": "application",
+  "version": "1.0.0",
+  "description": "sample app for backend using mysql",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "hbs": "^4.1.2",
+    "jsonwebtoken": "^8.5.1",
+    "mysql": "^2.18.1",
+    "promisify": "0.0.3",
+    "pug": "^3.0.2"
+  }
+}

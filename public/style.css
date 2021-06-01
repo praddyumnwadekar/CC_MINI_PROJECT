@@ -1,0 +1,68 @@
+body {
+	background-color: orange;
+}
+
+nav {
+	background-color: #563d7c;
+	color: #fff;
+	padding: 30px 60px;
+	display: flex;
+	justify-content: space-between;
+}
+
+nav ul {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+nav li {
+	list-style: none;
+}
+
+nav li a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 5px 8px;
+}
+
+nav li a span {
+	font-size: 13.5px;
+}
+nav li a:hover {
+	color: yellow;
+	text-decoration: none;
+}
+
+span {
+	font-size: 20px;
+}
+
+.registerUserf {
+	font-size: 30px;
+}
+
+.registerbtn {
+	font-size: 15px;
+}
+
+.form input {
+	font-size: 15px;
+}
+
+.containerprofile {
+	/* position: inherit; */
+	margin-left: 290px;
+	margin-top: -283px;
+}
+
+.passwordsform {
+	margin-left: 980px;
+}
+
+.passwordtables {
+	margin-top: 50px;
+	margin-left: 430px;
+	margin-right: 550px;
+}
